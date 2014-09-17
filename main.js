@@ -7,10 +7,13 @@ var main = {
 
 	create: function() { 
 		this.gametext = game.add.text(400, 300, 'The Game', { fontSize: '72px', fill: '#fff' });
+		this.circle = 0;
 	},
 
 	update: function() {
-		
+		this.gametext.cameraOffset.x = 400 + Math.cos(this.circle) * 100;
+		this.gametext.cameraOffset.y = 300 + Math.sin(this.circle) * 100;
+		this.circle += 0.1;
 	},
 };
 
