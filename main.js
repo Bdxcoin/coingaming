@@ -11,8 +11,8 @@ var main = {
 	},
 
 	update: function() {
-		this.gametext.cameraOffset.x = 400 + Math.cos(this.circle) * 100;
-		this.gametext.cameraOffset.y = 300 + Math.sin(this.circle) * 100;
+		this.gametext.world.x = 400 + Math.cos(this.circle) * 100;
+		this.gametext.world.y = 300 + Math.sin(this.circle) * 100;
 		this.circle += 0.1;
 	},
 };
