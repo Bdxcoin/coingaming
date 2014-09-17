@@ -8,12 +8,13 @@ var main = {
 	create: function() { 
 		this.circle = 0;
 		this.gamesprite = game.add.sprite(400, 300, 'game');
+		this.gamesprite.anchor.setTo(0.5, 0.5);
 	},
 
 	update: function() {
 		this.gamesprite.x = 400 + Math.cos(this.circle) * 100;
 		this.gamesprite.y = 300 + Math.sin(this.circle) * 100;
-		this.circle += 0.1;
+		this.circle += 0.05;
 	},
 };
 
