@@ -9,7 +9,7 @@ var main = {
 		this.circle = 0;
 		this.bmd = game.add.bitmapData(game.width, game.height);
 		this.bmd.fill(0, 0, 0, 1);
-		bmd.addToWorld();
+		this.bmd.addToWorld();
 
 	    this.text = game.make.text(400, 300, "The Game", { font: "bold 32px Arial", fill: "#fff" });
 	    this.text.anchor.set(0.5);
